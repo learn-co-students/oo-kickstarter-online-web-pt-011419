@@ -8,8 +8,8 @@ end
 
 def back_project(backed_projects)
   @backed_projects << backed_projects
-  add = Project.new(backed_projects)
-
+  # add = Project.new(backed_projects)
+  @backed_projects.add_backer(backed_projects)
   #  binding.pry
 end
 
